@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int j = 0;
+int main(int n) {
+	cout << "Enter N - ";
+	cin >> n;
+	int a[100] = {};
+	for (int i = 1; i <= n + j; i += 2) {
+		a[j] = i;
+		cout << a[j] << endl;
+		j++;
+	}
+}
