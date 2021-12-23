@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int j = 2; int a; int b;
+int main(int n) {
+	cout << "Enter N - ";
+	cin >> n;
+	cout << "Enter A - ";
+	cin >> a;
+	cout << "Enter B - ";
+	cin >> b;
+	int ar[100] = {a, b};
+	cout << a << endl;
+	cout << b << endl;
+	while (j <= n - 1) {
+		for (int i = 0; i <= j - 1; i++) {
+			ar[j] += ar[i];
+		}
+		cout << ar[j] << endl;
+		j++;
+	}
+}
