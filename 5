@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int n = 7;
+	int k = 1;
+	int ar[7] = {1, 2, 3, 4, 5, 6, 7};
+	for (int i = 1; i < n; i += 2) {
+		cout << ar[i] << endl;
+	}
+	if (n % 2 != 0) {
+		k = k + 2;
+	}
+	for (int j = n / 2 + k; j >= 0; j -= 2) {
+		cout << ar[j] << endl;
+	}
+}
